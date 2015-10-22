@@ -1,0 +1,35 @@
+{
+  "name": "jsnext-skeleton",
+  "version": "0.1.0",
+  "description": "Skeleton project demonstrating best practices for authoring and publishing the latest version of JavaScript to NPM.",
+  "main": "./lib/index.js",
+  "jsnext:main": "./src/index.js",
+  "scripts": {
+    "prepublish": "babel --optional runtime src/ --out-dir lib/",
+    "test": "mocha --reporter spec --full-trace test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/benjamn/jsnext-skeleton.git"
+  },
+  "keywords": [
+    "ecmascript",
+    "es2015",
+    "jsnext",
+    "javascript",
+    "skeleton",
+    "npm",
+    "babel"
+  ],
+  "author": "Ben Newman <ben@benjamn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjamn/jsnext-skeleton/issues"
+  },
+  "homepage": "https://github.com/benjamn/jsnext-skeleton#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
+    "mocha": "^2.3.3"
+  }
+}
